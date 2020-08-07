@@ -16,7 +16,7 @@ int ex1(int testcase){
 	while (t){
 		d = n/t;
 		n %= t;
-		if (t > 10 || t == 1 || 10*d >= 20 && 10*d < 10){
+		if (t > 10 || t == 1 || d >= 20 && d < 10){
 			switch (d){
 				case 1:{
 					cout <<"one ";
@@ -56,7 +56,7 @@ int ex1(int testcase){
 				}
 			}
 		}
-		if (t == 1000){
+		if (t == 1000 ){
 			cout <<"thousand ";
 		}
 		if (t == 100 && d % t != 0){
@@ -111,6 +111,10 @@ int ex1(int testcase){
 					}
 					break;
 				}
+			}
+			if (d == 1)
+				break;
+			switch (d){
 				case 2:{
 					cout <<"twenty ";
 					break;
