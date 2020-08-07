@@ -56,14 +56,11 @@ int ex1(int testcase){
 				}
 			}
 		}
-		if (t == 1000 && d % t != 0){
+		if (t == 1000){
 			cout <<"thousand ";
 		}
 		if (t == 100 && d % t != 0){
-			cout <<"hundred and ";
-		}
-		if (t == 100 && d % t == 0){
-			cout <<"and ";
+			cout <<"hundred ";
 		}
 		if (t == 10){
 			switch (d){
