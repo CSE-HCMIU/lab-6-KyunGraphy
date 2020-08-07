@@ -60,7 +60,10 @@ int ex1(int testcase){
 			cout <<"thousand ";
 		}
 		if (t == 100 && d % t != 0){
-			cout <<"hundred ";
+			cout <<"hundred and ";
+		}
+		if (t == 100 && d % t == 0){
+			cout <<"and ";
 		}
 		if (t == 10){
 			switch (d){
@@ -69,43 +72,43 @@ int ex1(int testcase){
 					k = n%t;
 					switch (k){
 						case 1:{
-							cout <<"and eleven ";
+							cout <<"eleven ";
 							break;
 						}
 						case 2:{
-							cout <<"and twelve ";
+							cout <<"twelve ";
 							break;
 						}
 						case 3:{
-							cout <<"and thirteen ";
+							cout <<"thirteen ";
 							break;
 						}
 						case 4:{
-							cout <<"and fourteen ";
+							cout <<"fourteen ";
 							break;
 						}
 						case 5:{
-							cout <<"and fifteen ";
+							cout <<"fifteen ";
 							break;
 						}
 						case 6:{
-							cout <<"and sixteen ";
+							cout <<"sixteen ";
 							break;
 						}
 						case 7:{
-							cout <<"and seventeen ";
+							cout <<"seventeen ";
 							break;
 						}
 						case 8:{
-							cout <<"and eighteen ";
+							cout <<"eighteen ";
 							break;
 						}
 						case 9:{
-							cout <<"andnineteen ";
+							cout <<"nineteen ";
 							break;
 						}
 						case 0:{
-							cout <<" ten ";
+							cout <<"ten ";
 							break;
 						}
 					}
@@ -144,10 +147,11 @@ int ex1(int testcase){
 					break;
 				}
 			}
+			break;
 		}
 		t /= 10;
 	}
-}
+
 }
 
 int main(int argc, char *argv[]) {
