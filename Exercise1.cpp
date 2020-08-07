@@ -156,6 +156,8 @@ int ex1(int testcase){
 
 int main(int argc, char *argv[]) {
 	int testcase = atoi(argv[1]);
+	cout <<"Enter a number has 4 digit: ";
+	cin >> testcase;
 	
 	ex1(testcase);
 		
