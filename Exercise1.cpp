@@ -144,7 +144,6 @@ int ex1(int testcase){
 					break;
 				}
 			}
-			break;
 		}
 		t /= 10;
 	}
